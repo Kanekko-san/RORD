@@ -1,0 +1,29 @@
+  RORD 
+
+
+
+          1.0 - INTRODUÇÃO:
+
+
+
+O RORD é uma máquina virtual ficada na interpretação de arquivos.txt, e na sua formatação, de acordo com um arquivo Intents.txt.
+A princípio, seu objetivo era unicamente ler determinados trechos de um arquivo.txt e, se o trecho satizfazesse alguma Intent (conferir 2.0), então escrevia em OUT.txt o trecho formatado de acordo
+com a Intent em questão, e de acordo com o trecho original do arquivo de entrada, com as modificações previstas em Intent.txt.
+
+Foram desenvolvidas 2 linhas principais: 
+
+    A versão Low-Level, em C:
+        Mais eficiente, mais rápida, gastando menos memória. É a versão inicial do projeto. Voltada para processar com velocidade as entradas, e gerar retornos com rapidez.
+        Seu desenvolvimento foi interompido depois da conclusão das funções primárias de RobO e RobD, quando o projeto começou a ficar muito mais complexo do que se planajeva.
+        A Versão em C apenas realiza operações básicas de leitura, interpretação e escrita. 
+        Não realiza operações algébricas, lógicas, desvios condicionais, e outras funções que definem uma "Linguagem de Programação"
+        O RORD-C (linguame interpretada em Intents) é apenas uma linguagem formal, e pouco incrementável.
+
+    Versão High-Level, em Python:
+        Mais lenta, menos eficiente, ocupando mais memória, e com algoritimo focado em incrementabilidade, ao invés de desempenho.
+        Seu desenvolvimento foi iniciado por conta da dificuldade crescente de modificar o RORD-C
+        A versão High-Level está em desenvolvimento, mas, quando concluida, será uma linguagem de programação orientada a Objeto, contendo laços, desvios condicionais, definição de classes, objetos e etc.
+        O RORD-P (linguagem de programação) será uma linguagem interpretada que, quando executada, irá gerar um arquivo em protoRORD, uma versão mais simples da linguagem, com a qual se formará os comandos.
+        A cada execução, o usuário poderá executar imediatamente o arquivo protoRORD, ou executar com Intents.txt, e gerar novamente o protoRORD.
+        RORD-P também contará com parâmetros especiais para os command-IN de RobO (conferir 2.0) para, por exemplo, adquirir apenas os 3 dígitos mais a esquerda de um int, além do código de formatação em RobT (conferir 2.0)
+        
